@@ -40,6 +40,8 @@ for i in range(6):
   if i == 0:
     node = request.XenVM("head")
     node.routable_control_ip = "true"
+    yum install mariadb-server mariadb-devel -y
+   
   elif i == 1:
     node = request.XenVM("metadata")
   elif i == 2:
