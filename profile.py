@@ -40,10 +40,7 @@ for i in range(6):
   if i == 0:
     node = request.XenVM("head")
     node.routable_control_ip = "true"
-    git clone https://github.com/SchedMD/slurm.git
-    cd slurm
-    git checkout slurm-17-02-3-1
-    ./configure --enable-pam
+  
   
   elif i == 1:
     node = request.XenVM("metadata")
